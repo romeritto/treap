@@ -97,7 +97,7 @@ Output
 1       // treap contains only 8
 ```
 
-## 3. Contant me
+## 3. Contact me
 If you find something unclear or if you have a suggestion, do not hesitate to write me an email at r.sobkuliak(at)gmail.com
 
 ## 4. Resources
