@@ -220,10 +220,12 @@ typename Treap<TKey>::Node_ptr Treap<TKey>::_erase(Node_ptr root, TKey key, bool
 
     else if (left->priority > right->priority) {
         root = _rotate_right(root);
-        root->right = _erase(right, key, erased);
+        // root->right and not right defined earlier, because of rotation
+        root->right = _erase(root->right, key, erased);
     } else {
         root = _rotate_left(root);
-        root->left = _erase(left, key, erased);
+        // root->left and not left defined earlier, because of rotation
+        root->left = _erase(root->left, key, erased);
     }
 
     if (root != nullptr)
